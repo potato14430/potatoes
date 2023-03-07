@@ -1,0 +1,107 @@
+<head>
+
+    <title>
+        Computer Science Study
+    </title>
+
+    <link rel="icon" href="Logo.jfif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style1.css" />
+
+</head>
+<div class="title">
+    Computer Science Study
+</div>
+
+<div class="unitname">
+    Unit 1.1
+</div>
+
+
+
+<div class="questions">
+    <form class="questiontype1">
+        <label for="answer1">Is a float a primitive data type? </label>
+        <input class="textinput" type="text" id="answer1">
+        <input type="button" class="submit" value="Submit" onclick="checkAnswer1();">
+    </form>
+    <form class="questiontype1">
+        <label for="answer2">What is an integer? </label>
+        <input class="textinput" type="text" id="answer2">
+        <input type="button" class="submit" value="Submit" onclick="checkAnswer2();">
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    function checkAnswer1() {
+        var confirmAnswer = ['yes', 'y', 'ye', 'ya', 'Yes'];
+        var answer1 = document.getElementById("answer1").value;
+        if (confirmAnswer.includes(answer1)) {
+             alert("Well Done! You're doing great!");
+        }
+        else{
+            alert("A float is a primitive data type.");
+        }
+        
+    }
+
+
+
+    function checkAnswer2() {
+        var confirmAnswer = ['integral', 'Integral', 'INTEGRAL', 'DATA', 'Data', 'data', 'type', 'Type', 'Math'];
+        var answer2 = document.getElementById("answer2").value;
+        alert("An integer (int) is an integral data type to represent mathematical numbers.");
+    }
+
+    function checkAnswer3() {
+        var confirmAnswer = '7 Seven seven ';
+        var answer3 = document.getElementById("answer3").value;
+        if (confirmAnswer.includes(answer3)) {
+             alert("That's correct! :D");
+        }
+        else{
+            alert("No, the answer is 7.");
+        }
+    }
+
+
+</script>
